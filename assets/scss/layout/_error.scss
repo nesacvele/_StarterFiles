@@ -1,0 +1,17 @@
+.error-page {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__content {
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 7.8rem;
+        line-height: 85%;
+        font-weight: 600;
+    }
+}

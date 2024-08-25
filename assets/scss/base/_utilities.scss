@@ -1,0 +1,50 @@
+
+/*************************
+    Color
+*************************/
+.clr-primary { color: $clr-brand-primary; }
+.clr-primary-light { color: $clr-brand-primary-light; }
+.clr-secondary { color: $clr-brand-secondary; }
+.clr-secondary-dark { color: $clr-brand-secondary-dark; }
+.clr-success { color: $clr-brand-success; }
+.clr-info { color: $clr-brand-info; }
+.clr-danger { color: $clr-brand-danger; }
+
+/*************************
+    Background Color
+*************************/
+.bg-clr-primary { @include set-background($clr-brand-primary) ; }
+.bg-clr-primary-light { @include set-background($clr-brand-primary-light); }
+.bg-clr-secondary { @include set-background($clr-brand-secondary); }
+.bg-clr-secondary-dark { @include set-background($clr-brand-secondary-dark); }
+.bg-clr-success { @include set-background($clr-brand-success); }
+.bg-clr-info { @include set-background($clr-brand-info); }
+.bg-clr-danger { @include set-background($clr-brand-danger); }
+.bg-clr-white { @include set-background($white); }
+.bg-clr-black { @include set-background($black); }
+.bg-clr-neutral { @include set-background($neutral); }
+
+
+/*************************
+    Font Weight
+*************************/
+.fw-semibold { font-weight: 500; }
+.fw-bold { font-weight: 600; }
+.fw-extrabold { font-weight: 700; }
+.fw-black { font-weight: 800; }
+
+/*************************
+    Border Radius
+*************************/
+.b-radius-basic { border-radius: 1rem; }
+
+/*************************
+    Shadows
+*************************/
+.b-shadow { box-shadow: 2px 2px 10px 0px rgba(60, 114, 93,  0.3); }
+
+
+/*************************
+    Spacing
+*************************/
+.s-padding-small { padding: 1rem; }

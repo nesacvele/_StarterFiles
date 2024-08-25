@@ -1,0 +1,67 @@
+// Set text color based on bg
+@function set-text-color($color) {
+    @if(lightness($color) > 70) {
+        @return #223049;
+    } @else {
+       @return #fff;
+    }
+}
+
+// Margin & padding classes
+$spaceamounts: (5, 10,20,30,40,50,60,70,80,90,100);
+
+@each $space in $spaceamounts {
+    .m-#{$space} {
+        margin: #{$space}rem;
+    }
+    .my-#{$space} {
+        margin: #{$space}rem 0;
+    }
+    .mx-#{$space} {
+        margin: 0 #{$space}rem;
+    }
+    .mt-#{$space} {
+        margin-top: #{$space}rem;
+    }
+    .mr-#{$space} {
+        margin-right: #{$space}rem;
+    }
+    .mb-#{$space} {
+        margin-bottom: #{$space}rem;
+    }
+    .ml-#{$space} {
+        margin-left: #{$space}rem;
+    }
+    .p-#{$space} {
+        padding: #{$space}rem;
+    }
+    .py-#{$space} {
+        padding: #{$space}rem 0;
+    }
+    .px-#{$space} {
+        padding: 0 #{$space}rem;
+    }
+    .pt-#{$space} {
+        padding-top: #{$space}rem;
+    }
+    .pr-#{$space} {
+        padding-right: #{$space}rem;
+    }
+    .pb-#{$space} {
+        padding-bottom: #{$space}rem;
+    }
+    .pl-#{$space} {
+        padding-left: #{$space}rem;
+    }
+}
+
+
+// dividers
+$hightspace: (1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+@each $hight in $hightspace {
+    .divider-#{$hight} {
+        height: #{$hight}rem;
+        clear: both;
+    }
+}
