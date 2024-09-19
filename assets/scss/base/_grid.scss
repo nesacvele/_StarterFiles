@@ -1,0 +1,38 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start]  repeat(8, [col-start] minmax(min-content, 16.5rem) [col-end]) [center-end] minmax(2rem, 1fr) [full-end];
+    
+}
+
+.container-full {
+    grid-column: full-start / full-end;
+}
+
+.container-center {
+    grid-column: center-start / center-end;
+    position: relative;
+}
+
+.container-narow {
+    grid-column: col-start 2 /  col-start 8;
+
+    @include media(tab-md) {
+        grid-column: center-start / center-end;
+    }
+}
+
+.container-left {
+    grid-column: full-start /  col-end 8;
+
+    @include media(tab-port){
+        grid-column: center-start / center-end;
+    }
+}
+
+.container-right {
+    grid-column: col-start 1 /  full-end;
+
+    @include media(tab-port){
+        grid-column: center-start / center-end;
+    }
+}
