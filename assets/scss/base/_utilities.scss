@@ -24,10 +24,10 @@
 .bg-clr-white { @include set-background($white); }
 .bg-clr-black { @include set-background($black); }
 .bg-clr-neutral { @include set-background($neutral); }
-.bg-clr-neutral-light { @include set-background($neutral-light); }
+// .bg-clr-neutral-light { @include set-background($neutral-light); }
 
-.bg-brand-gradient { background-image: $clr-brand-gradient; }
-.bg-clr-secondary-transparent { background-color: rgba($clr-brand-secondary, .05); }
+// .bg-brand-gradient { background-image: $clr-brand-gradient; }
+// .bg-clr-secondary-transparent { background-color: rgba($clr-brand-secondary, .05); }
 
 .text-gradient {
     -webkit-background-clip: text;
@@ -147,4 +147,27 @@
     } 
 }
 .margin-bottom-xl { margin-bottom: 10rem; }
+
+
+.img-overlap {
+    position: relative;
+    min-height: 20rem;
+
+    &--1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 40%;
+        right: 30%;
+        
+    }
+
+    &--2 {
+        position: absolute;
+        top: 80%;
+        right: 0;
+        left: 40%;
+
+    }
+}
 
